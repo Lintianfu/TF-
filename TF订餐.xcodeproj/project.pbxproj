@@ -7,28 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		336BD411957C83A92E398478 /* Pods_TF__.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044D1C1831D8D41B68018CE0 /* Pods_TF__.framework */; };
 		8BF7BD9523EBB3D200AC6B58 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF7BD9423EBB3D200AC6B58 /* AppDelegate.m */; };
-		8BF7BD9823EBB3D200AC6B58 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF7BD9723EBB3D200AC6B58 /* SceneDelegate.m */; };
-		8BF7BD9B23EBB3D200AC6B58 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF7BD9A23EBB3D200AC6B58 /* ViewController.m */; };
-		8BF7BD9E23EBB3D200AC6B58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BF7BD9C23EBB3D200AC6B58 /* Main.storyboard */; };
 		8BF7BDA023EBB3D200AC6B58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BF7BD9F23EBB3D200AC6B58 /* Assets.xcassets */; };
 		8BF7BDA323EBB3D200AC6B58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BF7BDA123EBB3D200AC6B58 /* LaunchScreen.storyboard */; };
 		8BF7BDA623EBB3D200AC6B58 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF7BDA523EBB3D200AC6B58 /* main.m */; };
+		8BF7BDAE23EBB42500AC6B58 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF7BDAD23EBB42500AC6B58 /* RootViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		044D1C1831D8D41B68018CE0 /* Pods_TF__.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TF__.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BF7BD9023EBB3D200AC6B58 /* TF订餐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TF订餐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BF7BD9323EBB3D200AC6B58 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8BF7BD9423EBB3D200AC6B58 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8BF7BD9623EBB3D200AC6B58 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		8BF7BD9723EBB3D200AC6B58 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		8BF7BD9923EBB3D200AC6B58 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8BF7BD9A23EBB3D200AC6B58 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		8BF7BD9D23EBB3D200AC6B58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8BF7BD9F23EBB3D200AC6B58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BF7BDA223EBB3D200AC6B58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8BF7BDA423EBB3D200AC6B58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BF7BDA523EBB3D200AC6B58 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8BF7BDAC23EBB42500AC6B58 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		8BF7BDAD23EBB42500AC6B58 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		CEB7587D58C24AF0F43E85D2 /* Pods-TF订餐.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TF订餐.debug.xcconfig"; path = "Target Support Files/Pods-TF订餐/Pods-TF订餐.debug.xcconfig"; sourceTree = "<group>"; };
+		F00C29E5694251BADC7A323C /* Pods-TF订餐.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TF订餐.release.xcconfig"; path = "Target Support Files/Pods-TF订餐/Pods-TF订餐.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				336BD411957C83A92E398478 /* Pods_TF__.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E6899F89BCCC8FC0C4A4040 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				044D1C1831D8D41B68018CE0 /* Pods_TF__.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8BF7BD8723EBB3D200AC6B58 = {
 			isa = PBXGroup;
 			children = (
 				8BF7BD9223EBB3D200AC6B58 /* TF订餐 */,
 				8BF7BD9123EBB3D200AC6B58 /* Products */,
+				8C41DF177EF18710075169F6 /* Pods */,
+				1E6899F89BCCC8FC0C4A4040 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,17 +73,24 @@
 			children = (
 				8BF7BD9323EBB3D200AC6B58 /* AppDelegate.h */,
 				8BF7BD9423EBB3D200AC6B58 /* AppDelegate.m */,
-				8BF7BD9623EBB3D200AC6B58 /* SceneDelegate.h */,
-				8BF7BD9723EBB3D200AC6B58 /* SceneDelegate.m */,
-				8BF7BD9923EBB3D200AC6B58 /* ViewController.h */,
-				8BF7BD9A23EBB3D200AC6B58 /* ViewController.m */,
-				8BF7BD9C23EBB3D200AC6B58 /* Main.storyboard */,
 				8BF7BD9F23EBB3D200AC6B58 /* Assets.xcassets */,
 				8BF7BDA123EBB3D200AC6B58 /* LaunchScreen.storyboard */,
 				8BF7BDA423EBB3D200AC6B58 /* Info.plist */,
 				8BF7BDA523EBB3D200AC6B58 /* main.m */,
+				8BF7BDAC23EBB42500AC6B58 /* RootViewController.h */,
+				8BF7BDAD23EBB42500AC6B58 /* RootViewController.m */,
 			);
 			path = "TF订餐";
+			sourceTree = "<group>";
+		};
+		8C41DF177EF18710075169F6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CEB7587D58C24AF0F43E85D2 /* Pods-TF订餐.debug.xcconfig */,
+				F00C29E5694251BADC7A323C /* Pods-TF订餐.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,9 +100,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8BF7BDA923EBB3D200AC6B58 /* Build configuration list for PBXNativeTarget "TF订餐" */;
 			buildPhases = (
+				648E96890C0627889EA4F8D7 /* [CP] Check Pods Manifest.lock */,
 				8BF7BD8C23EBB3D200AC6B58 /* Sources */,
 				8BF7BD8D23EBB3D200AC6B58 /* Frameworks */,
 				8BF7BD8E23EBB3D200AC6B58 /* Resources */,
+				42F428D2DDEB21873FC99332 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,35 +154,67 @@
 			files = (
 				8BF7BDA323EBB3D200AC6B58 /* LaunchScreen.storyboard in Resources */,
 				8BF7BDA023EBB3D200AC6B58 /* Assets.xcassets in Resources */,
-				8BF7BD9E23EBB3D200AC6B58 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		42F428D2DDEB21873FC99332 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TF订餐/Pods-TF订餐-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TF订餐/Pods-TF订餐-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TF订餐/Pods-TF订餐-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		648E96890C0627889EA4F8D7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TF订餐-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8BF7BD8C23EBB3D200AC6B58 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BF7BD9B23EBB3D200AC6B58 /* ViewController.m in Sources */,
 				8BF7BD9523EBB3D200AC6B58 /* AppDelegate.m in Sources */,
 				8BF7BDA623EBB3D200AC6B58 /* main.m in Sources */,
-				8BF7BD9823EBB3D200AC6B58 /* SceneDelegate.m in Sources */,
+				8BF7BDAE23EBB42500AC6B58 /* RootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8BF7BD9C23EBB3D200AC6B58 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8BF7BD9D23EBB3D200AC6B58 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8BF7BDA123EBB3D200AC6B58 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -287,6 +338,7 @@
 		};
 		8BF7BDAA23EBB3D200AC6B58 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEB7587D58C24AF0F43E85D2 /* Pods-TF订餐.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -304,6 +356,7 @@
 		};
 		8BF7BDAB23EBB3D200AC6B58 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F00C29E5694251BADC7A323C /* Pods-TF订餐.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

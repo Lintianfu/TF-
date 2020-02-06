@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  RootViewController.h
 //  TF订餐
 //
 //  Created by Mr.TF on 2020/2/6.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+NS_ASSUME_NONNULL_BEGIN
 
+@interface RootViewController : UIViewController
 
 @end
 
+NS_ASSUME_NONNULL_END
