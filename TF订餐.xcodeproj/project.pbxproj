@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		336BD411957C83A92E398478 /* Pods_TF__.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 044D1C1831D8D41B68018CE0 /* Pods_TF__.framework */; };
+		8B4A9E8123EBDA2E00593582 /* Pods_TF订餐.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B4A9E8023EBDA2E00593582 /* Pods_TF订餐.framework */; };
+		8B4A9E8623EBE48200593582 /* bg_set_up.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8B4A9E8523EBE48200593582 /* bg_set_up.jpg */; };
 		8BF7BD9523EBB3D200AC6B58 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF7BD9423EBB3D200AC6B58 /* AppDelegate.m */; };
 		8BF7BDA023EBB3D200AC6B58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BF7BD9F23EBB3D200AC6B58 /* Assets.xcassets */; };
 		8BF7BDA323EBB3D200AC6B58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BF7BDA123EBB3D200AC6B58 /* LaunchScreen.storyboard */; };
@@ -17,6 +18,9 @@
 
 /* Begin PBXFileReference section */
 		044D1C1831D8D41B68018CE0 /* Pods_TF__.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TF__.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B4A9E7E23EBDA1A00593582 /* ActionSheetPicker_3_0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ActionSheetPicker_3_0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B4A9E8023EBDA2E00593582 /* Pods_TF订餐.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = "Pods_TF订餐.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B4A9E8523EBE48200593582 /* bg_set_up.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg_set_up.jpg; sourceTree = "<group>"; };
 		8BF7BD9023EBB3D200AC6B58 /* TF订餐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TF订餐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BF7BD9323EBB3D200AC6B58 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8BF7BD9423EBB3D200AC6B58 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -35,7 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				336BD411957C83A92E398478 /* Pods_TF__.framework in Frameworks */,
+				8B4A9E8123EBDA2E00593582 /* Pods_TF订餐.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,9 +49,19 @@
 		1E6899F89BCCC8FC0C4A4040 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8B4A9E8023EBDA2E00593582 /* Pods_TF订餐.framework */,
+				8B4A9E7E23EBDA1A00593582 /* ActionSheetPicker_3_0.framework */,
 				044D1C1831D8D41B68018CE0 /* Pods_TF__.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8B4A9E8223EBE38A00593582 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				8B4A9E8523EBE48200593582 /* bg_set_up.jpg */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 		8BF7BD8723EBB3D200AC6B58 = {
@@ -71,6 +85,7 @@
 		8BF7BD9223EBB3D200AC6B58 /* TF订餐 */ = {
 			isa = PBXGroup;
 			children = (
+				8B4A9E8223EBE38A00593582 /* images */,
 				8BF7BD9323EBB3D200AC6B58 /* AppDelegate.h */,
 				8BF7BD9423EBB3D200AC6B58 /* AppDelegate.m */,
 				8BF7BD9F23EBB3D200AC6B58 /* Assets.xcassets */,
@@ -89,7 +104,6 @@
 				CEB7587D58C24AF0F43E85D2 /* Pods-TF订餐.debug.xcconfig */,
 				F00C29E5694251BADC7A323C /* Pods-TF订餐.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -154,6 +168,7 @@
 			files = (
 				8BF7BDA323EBB3D200AC6B58 /* LaunchScreen.storyboard in Resources */,
 				8BF7BDA023EBB3D200AC6B58 /* Assets.xcassets in Resources */,
+				8B4A9E8623EBE48200593582 /* bg_set_up.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +356,7 @@
 			baseConfigurationReference = CEB7587D58C24AF0F43E85D2 /* Pods-TF订餐.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WL4RFH9S5A;
 				INFOPLIST_FILE = "TF订餐/Info.plist";
@@ -351,6 +367,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Mr.TF.project.TF--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};
 			name = Debug;
 		};
@@ -359,6 +376,7 @@
 			baseConfigurationReference = F00C29E5694251BADC7A323C /* Pods-TF订餐.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WL4RFH9S5A;
 				INFOPLIST_FILE = "TF订餐/Info.plist";
@@ -369,6 +387,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Mr.TF.project.TF--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};
 			name = Release;
 		};
