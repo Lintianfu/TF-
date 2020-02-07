@@ -13,6 +13,8 @@
 		8B4A9EA023EC396700593582 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B4A9E9F23EC396700593582 /* NavigationController.m */; };
 		8B4A9EA323EC428300593582 /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B4A9EA223EC428300593582 /* TabBarViewController.m */; };
 		8B4A9EA723EC456B00593582 /* UIImage+TF.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B4A9EA623EC456B00593582 /* UIImage+TF.m */; };
+		8B752E8A23ED00AC00D027D4 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B752E8823ED00AC00D027D4 /* LoginViewController.m */; };
+		8B752E8B23ED00AC00D027D4 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B752E8923ED00AC00D027D4 /* LoginViewController.xib */; };
 		8BF7BD9523EBB3D200AC6B58 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF7BD9423EBB3D200AC6B58 /* AppDelegate.m */; };
 		8BF7BDA023EBB3D200AC6B58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BF7BD9F23EBB3D200AC6B58 /* Assets.xcassets */; };
 		8BF7BDA323EBB3D200AC6B58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BF7BDA123EBB3D200AC6B58 /* LaunchScreen.storyboard */; };
@@ -34,6 +36,9 @@
 		8B4A9EA223EC428300593582 /* TabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
 		8B4A9EA523EC456B00593582 /* UIImage+TF.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+TF.h"; sourceTree = "<group>"; };
 		8B4A9EA623EC456B00593582 /* UIImage+TF.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TF.m"; sourceTree = "<group>"; };
+		8B752E8723ED00AC00D027D4 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		8B752E8823ED00AC00D027D4 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		8B752E8923ED00AC00D027D4 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		8BF7BD9023EBB3D200AC6B58 /* TF订餐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TF订餐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BF7BD9323EBB3D200AC6B58 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8BF7BD9423EBB3D200AC6B58 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -224,6 +229,9 @@
 		8B4A9E9923EBEA9100593582 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				8B752E8723ED00AC00D027D4 /* LoginViewController.h */,
+				8B752E8823ED00AC00D027D4 /* LoginViewController.m */,
+				8B752E8923ED00AC00D027D4 /* LoginViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -340,6 +348,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B752E8B23ED00AC00D027D4 /* LoginViewController.xib in Resources */,
 				8BF7BDA323EBB3D200AC6B58 /* LaunchScreen.storyboard in Resources */,
 				8BF7BDA023EBB3D200AC6B58 /* Assets.xcassets in Resources */,
 				8B4A9E8623EBE48200593582 /* bg_set_up.jpg in Resources */,
@@ -395,6 +404,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B752E8A23ED00AC00D027D4 /* LoginViewController.m in Sources */,
 				8BF7BD9523EBB3D200AC6B58 /* AppDelegate.m in Sources */,
 				8B4A9EA723EC456B00593582 /* UIImage+TF.m in Sources */,
 				8B4A9E9C23EBEDE800593582 /* BaseViewController.m in Sources */,
