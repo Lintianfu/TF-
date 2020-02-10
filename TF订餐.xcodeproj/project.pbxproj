@@ -13,13 +13,20 @@
 		8B4A9EA023EC396700593582 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B4A9E9F23EC396700593582 /* NavigationController.m */; };
 		8B4A9EA323EC428300593582 /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B4A9EA223EC428300593582 /* TabBarViewController.m */; };
 		8B4A9EA723EC456B00593582 /* UIImage+TF.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B4A9EA623EC456B00593582 /* UIImage+TF.m */; };
+		8B6B354223EFA04200F62149 /* NSString+TF.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6B354123EFA04200F62149 /* NSString+TF.m */; };
+		8B6B354523EFAC5200F62149 /* Session.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6B354423EFAC5200F62149 /* Session.m */; };
+		8B6B354B23EFAC8500F62149 /* HttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6B354A23EFAC8500F62149 /* HttpClient.m */; };
+		8B6B355123F1840C00F62149 /* NSError+TF.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6B355023F1840C00F62149 /* NSError+TF.m */; };
 		8B752E8A23ED00AC00D027D4 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B752E8823ED00AC00D027D4 /* LoginViewController.m */; };
 		8B752E8B23ED00AC00D027D4 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B752E8923ED00AC00D027D4 /* LoginViewController.xib */; };
+		8B752E8E23ED375400D027D4 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B752E8D23ED375400D027D4 /* HomeViewController.m */; };
+		8B752E9123ED376D00D027D4 /* HistoryOrdersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B752E9023ED376D00D027D4 /* HistoryOrdersViewController.m */; };
+		8B752E9423ED378500D027D4 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B752E9323ED378500D027D4 /* SettingViewController.m */; };
+		8B752E9A23ED3CFA00D027D4 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B752E9923ED3CFA00D027D4 /* User.m */; };
 		8BF7BD9523EBB3D200AC6B58 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF7BD9423EBB3D200AC6B58 /* AppDelegate.m */; };
 		8BF7BDA023EBB3D200AC6B58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BF7BD9F23EBB3D200AC6B58 /* Assets.xcassets */; };
 		8BF7BDA323EBB3D200AC6B58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BF7BDA123EBB3D200AC6B58 /* LaunchScreen.storyboard */; };
 		8BF7BDA623EBB3D200AC6B58 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF7BDA523EBB3D200AC6B58 /* main.m */; };
-		8BF7BDAE23EBB42500AC6B58 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF7BDAD23EBB42500AC6B58 /* RootViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,9 +43,25 @@
 		8B4A9EA223EC428300593582 /* TabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
 		8B4A9EA523EC456B00593582 /* UIImage+TF.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+TF.h"; sourceTree = "<group>"; };
 		8B4A9EA623EC456B00593582 /* UIImage+TF.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TF.m"; sourceTree = "<group>"; };
+		8B6B354023EFA04200F62149 /* NSString+TF.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+TF.h"; sourceTree = "<group>"; };
+		8B6B354123EFA04200F62149 /* NSString+TF.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+TF.m"; sourceTree = "<group>"; };
+		8B6B354323EFAC5200F62149 /* Session.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Session.h; sourceTree = "<group>"; };
+		8B6B354423EFAC5200F62149 /* Session.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Session.m; sourceTree = "<group>"; };
+		8B6B354923EFAC8500F62149 /* HttpClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpClient.h; sourceTree = "<group>"; };
+		8B6B354A23EFAC8500F62149 /* HttpClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HttpClient.m; sourceTree = "<group>"; };
+		8B6B354F23F1840C00F62149 /* NSError+TF.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSError+TF.h"; sourceTree = "<group>"; };
+		8B6B355023F1840C00F62149 /* NSError+TF.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSError+TF.m"; sourceTree = "<group>"; };
 		8B752E8723ED00AC00D027D4 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		8B752E8823ED00AC00D027D4 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		8B752E8923ED00AC00D027D4 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		8B752E8C23ED375400D027D4 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		8B752E8D23ED375400D027D4 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		8B752E8F23ED376D00D027D4 /* HistoryOrdersViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HistoryOrdersViewController.h; sourceTree = "<group>"; };
+		8B752E9023ED376D00D027D4 /* HistoryOrdersViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HistoryOrdersViewController.m; sourceTree = "<group>"; };
+		8B752E9223ED378500D027D4 /* SettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		8B752E9323ED378500D027D4 /* SettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		8B752E9823ED3CFA00D027D4 /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		8B752E9923ED3CFA00D027D4 /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		8BF7BD9023EBB3D200AC6B58 /* TF订餐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TF订餐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BF7BD9323EBB3D200AC6B58 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8BF7BD9423EBB3D200AC6B58 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -46,8 +69,6 @@
 		8BF7BDA223EBB3D200AC6B58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8BF7BDA423EBB3D200AC6B58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BF7BDA523EBB3D200AC6B58 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		8BF7BDAC23EBB42500AC6B58 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
-		8BF7BDAD23EBB42500AC6B58 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		CEB7587D58C24AF0F43E85D2 /* Pods-TF订餐.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TF订餐.debug.xcconfig"; path = "Target Support Files/Pods-TF订餐/Pods-TF订餐.debug.xcconfig"; sourceTree = "<group>"; };
 		F00C29E5694251BADC7A323C /* Pods-TF订餐.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TF订餐.release.xcconfig"; path = "Target Support Files/Pods-TF订餐/Pods-TF订餐.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -97,6 +118,7 @@
 		8B4A9E8923EBE95000593582 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				8B752E9B23EEF13D00D027D4 /* Tool */,
 				8B4A9E9023EBEA3200593582 /* Controller */,
 				8B4A9E8F23EBEA2C00593582 /* View */,
 				8B4A9E8E23EBEA1D00593582 /* Model */,
@@ -146,6 +168,8 @@
 		8B4A9E8E23EBEA1D00593582 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8B752E9823ED3CFA00D027D4 /* User.h */,
+				8B752E9923ED3CFA00D027D4 /* User.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -187,6 +211,8 @@
 		8B4A9E9323EBEA6100593582 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				8B752E9223ED378500D027D4 /* SettingViewController.h */,
+				8B752E9323ED378500D027D4 /* SettingViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -208,6 +234,8 @@
 		8B4A9E9623EBEA7600593582 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				8B752E8F23ED376D00D027D4 /* HistoryOrdersViewController.h */,
+				8B752E9023ED376D00D027D4 /* HistoryOrdersViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -232,6 +260,8 @@
 				8B752E8723ED00AC00D027D4 /* LoginViewController.h */,
 				8B752E8823ED00AC00D027D4 /* LoginViewController.m */,
 				8B752E8923ED00AC00D027D4 /* LoginViewController.xib */,
+				8B752E8C23ED375400D027D4 /* HomeViewController.h */,
+				8B752E8D23ED375400D027D4 /* HomeViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -241,8 +271,23 @@
 			children = (
 				8B4A9EA523EC456B00593582 /* UIImage+TF.h */,
 				8B4A9EA623EC456B00593582 /* UIImage+TF.m */,
+				8B6B354023EFA04200F62149 /* NSString+TF.h */,
+				8B6B354123EFA04200F62149 /* NSString+TF.m */,
+				8B6B354F23F1840C00F62149 /* NSError+TF.h */,
+				8B6B355023F1840C00F62149 /* NSError+TF.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		8B752E9B23EEF13D00D027D4 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				8B6B354323EFAC5200F62149 /* Session.h */,
+				8B6B354423EFAC5200F62149 /* Session.m */,
+				8B6B354923EFAC8500F62149 /* HttpClient.h */,
+				8B6B354A23EFAC8500F62149 /* HttpClient.m */,
+			);
+			path = Tool;
 			sourceTree = "<group>";
 		};
 		8BF7BD8723EBB3D200AC6B58 = {
@@ -274,8 +319,6 @@
 				8BF7BDA123EBB3D200AC6B58 /* LaunchScreen.storyboard */,
 				8BF7BDA423EBB3D200AC6B58 /* Info.plist */,
 				8BF7BDA523EBB3D200AC6B58 /* main.m */,
-				8BF7BDAC23EBB42500AC6B58 /* RootViewController.h */,
-				8BF7BDAD23EBB42500AC6B58 /* RootViewController.m */,
 			);
 			path = "TF订餐";
 			sourceTree = "<group>";
@@ -404,14 +447,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B752E9123ED376D00D027D4 /* HistoryOrdersViewController.m in Sources */,
 				8B752E8A23ED00AC00D027D4 /* LoginViewController.m in Sources */,
 				8BF7BD9523EBB3D200AC6B58 /* AppDelegate.m in Sources */,
 				8B4A9EA723EC456B00593582 /* UIImage+TF.m in Sources */,
+				8B6B354223EFA04200F62149 /* NSString+TF.m in Sources */,
 				8B4A9E9C23EBEDE800593582 /* BaseViewController.m in Sources */,
+				8B6B354523EFAC5200F62149 /* Session.m in Sources */,
 				8B4A9EA023EC396700593582 /* NavigationController.m in Sources */,
+				8B752E8E23ED375400D027D4 /* HomeViewController.m in Sources */,
 				8BF7BDA623EBB3D200AC6B58 /* main.m in Sources */,
+				8B752E9A23ED3CFA00D027D4 /* User.m in Sources */,
 				8B4A9EA323EC428300593582 /* TabBarViewController.m in Sources */,
-				8BF7BDAE23EBB42500AC6B58 /* RootViewController.m in Sources */,
+				8B6B354B23EFAC8500F62149 /* HttpClient.m in Sources */,
+				8B752E9423ED378500D027D4 /* SettingViewController.m in Sources */,
+				8B6B355123F1840C00F62149 /* NSError+TF.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

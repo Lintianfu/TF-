@@ -7,7 +7,15 @@
 //
 
 #import "LoginViewController.h"
-
+#import "Session.h"
+#import "NSError+TF.h"
+#import "NSString+TF.h"
+#import <SVProgressHUD/SVProgressHUD.h>
+#import "TabBarViewController.h"
+//app端传输 key
+#define BLMD5key   @"IAASIDuioponuYBIUNLIK123ikoIO"
+// 加密 key
+#define BLDESkey  @"ASDHOjhudhaos23asdihoh80"
 @interface LoginViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *jobNumberTextField;
 @property (weak, nonatomic) IBOutlet UITextField *pswTextField;
@@ -44,6 +52,33 @@
     self.loginBtn.layer.masksToBounds = YES;
 }
 - (IBAction)login:(id)sender {
+   //获取用户输入工号、密码
+    NSString *jobNumber = self.jobNumberTextField.text;
+    NSString *psw = self.pswTextField.text;
+    if ([jobNumber isEmpty]) {
+           [SVProgressHUD showErrorWithStatus:@"请输入工号"];
+           return;
+       }else if([psw isEmpty]){
+           [SVProgressHUD showErrorWithStatus:@"请输入密码"];
+           return;
+       }
+    [self.view endEditing:YES];
+    if (![jobNumber isEmpty] && ![psw isEmpty]) {
+        [SVProgressHUD showWithStatus:@"登录中..."];
+        [[Session sharedSession] userLogin:jobNumber pwd:psw result:^(NSError *error) {
+            if (error) {
+                [SVProgressHUD showErrorWithStatus:[error dl_errorInfo]];
+            }else{
+               [SVProgressHUD dismiss];
+               [UIApplication sharedApplication].windows[0].rootViewController = [[TabBarViewController alloc] init];
+            }
+        }];
+        
+    }
+    
+   /* [[Session sharedSession] userLogin:_jobNumberTextField.text pwd:_pswTextField.text result:^(NSError * _Nonnull error) {
+        NSLog(@"登录失败%@",error);
+    }];*/
 }
 
 

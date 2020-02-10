@@ -7,8 +7,15 @@
 //
 
 #import "AppDelegate.h"
-#import "RootViewController.h"
 #import "LoginViewController.h"
+#import "TabBarViewController.h"
+#import "Session.h"
+#import "User.h"
+#import <IQKeyboardManager/IQKeyboardManager.h>
+
+
+#define BLDESkey  @"ASDHOjhudhaos23asdihoh80"
+#define BLMD5key   @"IAASIDuioponuYBIUNLIK123ikoIO"
 @interface AppDelegate ()
 @end
 
@@ -18,13 +25,36 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window=[[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-    //RootViewController *rootVC=[[RootViewController alloc]init];
-    LoginViewController *rootVC=[[LoginViewController alloc]init];
-    self.window.rootViewController=rootVC;
-    self.window.backgroundColor=[UIColor redColor];
+    [self initIndexController];
+    //TabBarViewController *tab=[[TabBarViewController alloc]init];
+    //self.window.rootViewController=tab;
+    //self.window.rootViewController=[[LoginViewController alloc]init];
+    [self registerThirdService:launchOptions];
     [self.window makeKeyAndVisible];
     return YES;
 }
+-(void)initIndexController
+{
+    
+    NSString *user_id=[[Session sharedSession] loadUser];
+    if(user_id!=nil)
+    {
+        TabBarViewController *tab=[[TabBarViewController alloc]init];
+        self.window.rootViewController=tab;
+    }
+    else
+    {
+        self.window.rootViewController=[[LoginViewController alloc]init];
+    }
+}
+-(void)registerThirdService:(NSDictionary *)launchOptions {
+    IQKeyboardManager *keyboardManager = [IQKeyboardManager sharedManager];
+    keyboardManager.enable = YES;
+    keyboardManager.enableAutoToolbar = NO;//隐藏键盘上方toolBar
+    keyboardManager.shouldResignOnTouchOutside = YES;//点击textField/textView外收起键盘
+    keyboardManager.shouldToolbarUsesTextFieldTintColor = YES;
+}
+
 
 
 #pragma mark - UISceneSession lifecycle

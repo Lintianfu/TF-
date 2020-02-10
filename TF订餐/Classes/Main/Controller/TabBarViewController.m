@@ -9,6 +9,9 @@
 #import "TabBarViewController.h"
 #import "UIImage+TF.h"
 #import "NavigationController.h"
+#import "HomeViewController.h"
+#import "HistoryOrdersViewController.h"
+#import "SettingViewController.h"
 @interface TabBarViewController ()
 
 @end
@@ -19,7 +22,7 @@
     [super viewDidLoad];
     [self initTabbar];
     [self addChildViewControllers];
-    
+
     
     // Do any additional setup after loading the view.
 }
@@ -33,8 +36,18 @@
 }
 -(void)addChildViewControllers
 {
+    //添加首页控制器
+    HomeViewController *home=[[HomeViewController alloc]init];
+    [self addOneChildVC:home title:@"首页" imageName:@"home" selectedImageName:@"home_select"];
     
     
+    //添加历史订单控制器
+    HistoryOrdersViewController *history=[[HistoryOrdersViewController alloc]init];
+    [self addOneChildVC:history title:@"历史订单" imageName:@"History" selectedImageName:@"History_select"];
+    
+    //添加设置控制器
+    SettingViewController *setting=[[SettingViewController alloc]init];
+    [self addOneChildVC:setting title:@"我的" imageName:@"My" selectedImageName:@"My_select"];
 }
 -(void)addOneChildVC:(UIViewController*)viewController title:(NSString *)title imageName:(NSString *)imageName selectedImageName:(NSString *)selectedImageName
 {
@@ -51,7 +64,9 @@
        
        selectedImage = [selectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
        viewController.tabBarItem.selectedImage = selectedImage;
-       NavigationController *nav=[[NavigationController alloc]init];
+    
+    
+       NavigationController *nav=[[NavigationController alloc]initWithRootViewController:viewController];
        [self addChildViewController:nav];
 }
 
