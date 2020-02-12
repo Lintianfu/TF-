@@ -12,6 +12,7 @@
 #import "Session.h"
 #import "User.h"
 #import <IQKeyboardManager/IQKeyboardManager.h>
+#import "UserDAO.h"
 
 
 #define BLDESkey  @"ASDHOjhudhaos23asdihoh80"
@@ -26,25 +27,22 @@
     // Override point for customization after application launch.
     self.window=[[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     [self initIndexController];
-    //TabBarViewController *tab=[[TabBarViewController alloc]init];
-    //self.window.rootViewController=tab;
-    //self.window.rootViewController=[[LoginViewController alloc]init];
     [self registerThirdService:launchOptions];
     [self.window makeKeyAndVisible];
     return YES;
 }
 -(void)initIndexController
 {
-    
-    NSString *user_id=[[Session sharedSession] loadUser];
-    if(user_id!=nil)
+   UserDAO *dao=[UserDAO sharedInstance];
+   User *user=[dao findUser];
+    if(user==nil)
     {
-        TabBarViewController *tab=[[TabBarViewController alloc]init];
-        self.window.rootViewController=tab;
+        self.window.rootViewController=[[LoginViewController alloc]init];
     }
     else
     {
-        self.window.rootViewController=[[LoginViewController alloc]init];
+        TabBarViewController *tab=[[TabBarViewController alloc]init];
+        self.window.rootViewController=tab;
     }
 }
 -(void)registerThirdService:(NSDictionary *)launchOptions {

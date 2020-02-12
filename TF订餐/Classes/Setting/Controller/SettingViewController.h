@@ -7,11 +7,13 @@
 //
 
 #import "BaseViewController.h"
-
+#import "UserDAO.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SettingViewController : BaseViewController
-
+@property(nonatomic,strong)User *user;
+@property(nonatomic,strong)UserDAO *dao;
+-(NSString *)getCacheSize;
 @end
 
 NS_ASSUME_NONNULL_END

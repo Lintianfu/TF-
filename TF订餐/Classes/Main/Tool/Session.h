@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "User.h"
+#import "UserDAO.h"
 NS_ASSUME_NONNULL_BEGIN
 //app端传输 key
 #define BLMD5key   @"IAASIDuioponuYBIUNLIK123ikoIO"
@@ -35,6 +36,7 @@ typedef NS_ENUM(NSUInteger,SessionUserStatus){
 
 @interface Session : NSObject
 @property(nonatomic,strong)User *user;
+@property(nonatomic,strong)UserDAO *dao;
 @property(nonatomic,assign)SessionUserStatus userStatus;
 
 
@@ -45,7 +47,7 @@ typedef NS_ENUM(NSUInteger,SessionUserStatus){
 - (void)loginSuccess:(User *)user;//登录成功
 
 - (void)saveUser:(User *)user;//保存用户
-- (NSString *)loadUser;//加载缓存的用户
+- (User *)loadUser;//加载缓存的用户
 -(void)removeUser:(User *)user; //移除缓存的用户
 
 - (void)updateUserStatus:(SessionUserStatus)status;//更新用户状态

@@ -75,10 +75,6 @@
         }];
         
     }
-    
-   /* [[Session sharedSession] userLogin:_jobNumberTextField.text pwd:_pswTextField.text result:^(NSError * _Nonnull error) {
-        NSLog(@"登录失败%@",error);
-    }];*/
 }
 
 

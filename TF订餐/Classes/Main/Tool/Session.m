@@ -13,6 +13,7 @@
 #import <SVProgressHUD/SVProgressHUD.h>
 #import "TabBarViewController.h"
 
+
 @implementation Session
 static Session *_shareSession=nil;
 + (instancetype)sharedSession {  //单例模式
@@ -29,8 +30,9 @@ static Session *_shareSession=nil;
 {
     self = [super init];
     if (self) {
-        _user.uid = [self loadUser];
-        if (_user.uid) {
+        _dao=[UserDAO sharedInstance];
+        _user = [self loadUser];
+        if (_user) {
             _userStatus = SessionUserStatusLogined;
         }
     }
@@ -46,8 +48,9 @@ static Session *_shareSession=nil;
         User *user_login=[User mj_objectWithKeyValues:responseObj];
         [self loginSuccess:user_login];
         NSLog(@"%@",user_login);
-        [SVProgressHUD dismiss];
-        [UIApplication sharedApplication].windows[0].rootViewController = [[TabBarViewController alloc] init];
+        if (result) {
+            result(nil);
+        }
     } faliture:^(NSError * _Nonnull error) {
         if (result) {
             result(error);
@@ -67,23 +70,17 @@ static Session *_shareSession=nil;
     [self updateUserStatus:SessionUserStatusLogined];
 
 }
--(NSString *)loadUser //加载缓存的用户
+-(User *)loadUser //加载缓存的用户
 {
-    NSString *user_uid=[[NSUserDefaults standardUserDefaults] objectForKey:BLDUserKey];
-    //NSLog(@"读取出来的uid%@",user_uid);
-    return user_uid;
+    User *user_db=[self.dao findUser];
+    return user_db;
 }
 -(void)saveUser:(User *)user //保存用户
 {
-    if(user==nil)
+    if(user!=nil)
     {
-        [[NSUserDefaults standardUserDefaults] removeObjectForKey:BLDUserKey];
+        [self.dao create:user];
     }
-    else{
-        [[NSUserDefaults standardUserDefaults] setObject:user.uid forKey:BLDUserKey];
-        //NSLog(@"用户保存的uid%@",user.uid);
-    [[NSUserDefaults standardUserDefaults] synchronize];
-}
 }
 -(void)updateUser:(User *)user //更新用户信息
 {
@@ -103,7 +100,7 @@ static Session *_shareSession=nil;
 {
     if(user)
     {
-        [[NSUserDefaults standardUserDefaults]removeObjectForKey:BLDUserKey];
+        [self.dao remove:user];
     }
 }
 - (void)userLogout:(User *)user_out
@@ -113,7 +110,6 @@ static Session *_shareSession=nil;
     _user=nil;
     [self didChangeValueForKey:@"user"];
     [self updateUserStatus:SessionUserStatusLogout];
-    
     
     [UIApplication sharedApplication].applicationIconBadgeNumber = 0;
        NSArray *cookies = [[NSHTTPCookieStorage sharedHTTPCookieStorage] cookies];

@@ -23,6 +23,11 @@
 		8B752E9123ED376D00D027D4 /* HistoryOrdersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B752E9023ED376D00D027D4 /* HistoryOrdersViewController.m */; };
 		8B752E9423ED378500D027D4 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B752E9323ED378500D027D4 /* SettingViewController.m */; };
 		8B752E9A23ED3CFA00D027D4 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B752E9923ED3CFA00D027D4 /* User.m */; };
+		8B8C7CCA23F249FB00781E04 /* ModifyPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8C7CC923F249FB00781E04 /* ModifyPasswordViewController.m */; };
+		8B8C7CCD23F39F5D00781E04 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B8C7CCC23F39F5D00781E04 /* libsqlite3.0.tbd */; };
+		8B8C7CD123F3A06D00781E04 /* DBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8C7CD023F3A06D00781E04 /* DBHelper.m */; };
+		8B8C7CD423F3A47F00781E04 /* BaseDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8C7CD323F3A47F00781E04 /* BaseDAO.m */; };
+		8B8C7CD723F3A4E600781E04 /* UserDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8C7CD623F3A4E600781E04 /* UserDAO.m */; };
 		8BF7BD9523EBB3D200AC6B58 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF7BD9423EBB3D200AC6B58 /* AppDelegate.m */; };
 		8BF7BDA023EBB3D200AC6B58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BF7BD9F23EBB3D200AC6B58 /* Assets.xcassets */; };
 		8BF7BDA323EBB3D200AC6B58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BF7BDA123EBB3D200AC6B58 /* LaunchScreen.storyboard */; };
@@ -62,6 +67,15 @@
 		8B752E9323ED378500D027D4 /* SettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		8B752E9823ED3CFA00D027D4 /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		8B752E9923ED3CFA00D027D4 /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		8B8C7CC823F249FB00781E04 /* ModifyPasswordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModifyPasswordViewController.h; sourceTree = "<group>"; };
+		8B8C7CC923F249FB00781E04 /* ModifyPasswordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModifyPasswordViewController.m; sourceTree = "<group>"; };
+		8B8C7CCC23F39F5D00781E04 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		8B8C7CCF23F3A06D00781E04 /* DBHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBHelper.h; sourceTree = "<group>"; };
+		8B8C7CD023F3A06D00781E04 /* DBHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBHelper.m; sourceTree = "<group>"; };
+		8B8C7CD223F3A47F00781E04 /* BaseDAO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseDAO.h; sourceTree = "<group>"; };
+		8B8C7CD323F3A47F00781E04 /* BaseDAO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseDAO.m; sourceTree = "<group>"; };
+		8B8C7CD523F3A4E600781E04 /* UserDAO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserDAO.h; sourceTree = "<group>"; };
+		8B8C7CD623F3A4E600781E04 /* UserDAO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserDAO.m; sourceTree = "<group>"; };
 		8BF7BD9023EBB3D200AC6B58 /* TF订餐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TF订餐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BF7BD9323EBB3D200AC6B58 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8BF7BD9423EBB3D200AC6B58 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -78,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B8C7CCD23F39F5D00781E04 /* libsqlite3.0.tbd in Frameworks */,
 				8B4A9E8123EBDA2E00593582 /* Pods_TF订餐.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -88,6 +103,7 @@
 		1E6899F89BCCC8FC0C4A4040 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8B8C7CCC23F39F5D00781E04 /* libsqlite3.0.tbd */,
 				8B4A9E8023EBDA2E00593582 /* Pods_TF订餐.framework */,
 				8B4A9E7E23EBDA1A00593582 /* ActionSheetPicker_3_0.framework */,
 				044D1C1831D8D41B68018CE0 /* Pods_TF__.framework */,
@@ -149,6 +165,7 @@
 		8B4A9E8C23EBE99100593582 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
+				8B8C7CCB23F257AC00781E04 /* Tool */,
 				8B4A9E9323EBEA6100593582 /* Controller */,
 				8B4A9E9223EBEA5B00593582 /* View */,
 				8B4A9E9123EBEA5200593582 /* Model */,
@@ -159,6 +176,7 @@
 		8B4A9E8D23EBE9A600593582 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				8B8C7CCE23F3A04000781E04 /* DAO */,
 				8B4A9EA423EC454100593582 /* Category */,
 				8B4A9E9D23EBF06200593582 /* TF.pch */,
 			);
@@ -213,6 +231,8 @@
 			children = (
 				8B752E9223ED378500D027D4 /* SettingViewController.h */,
 				8B752E9323ED378500D027D4 /* SettingViewController.m */,
+				8B8C7CC823F249FB00781E04 /* ModifyPasswordViewController.h */,
+				8B8C7CC923F249FB00781E04 /* ModifyPasswordViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -288,6 +308,26 @@
 				8B6B354A23EFAC8500F62149 /* HttpClient.m */,
 			);
 			path = Tool;
+			sourceTree = "<group>";
+		};
+		8B8C7CCB23F257AC00781E04 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		8B8C7CCE23F3A04000781E04 /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				8B8C7CCF23F3A06D00781E04 /* DBHelper.h */,
+				8B8C7CD023F3A06D00781E04 /* DBHelper.m */,
+				8B8C7CD223F3A47F00781E04 /* BaseDAO.h */,
+				8B8C7CD323F3A47F00781E04 /* BaseDAO.m */,
+				8B8C7CD523F3A4E600781E04 /* UserDAO.h */,
+				8B8C7CD623F3A4E600781E04 /* UserDAO.m */,
+			);
+			path = DAO;
 			sourceTree = "<group>";
 		};
 		8BF7BD8723EBB3D200AC6B58 = {
@@ -449,10 +489,13 @@
 			files = (
 				8B752E9123ED376D00D027D4 /* HistoryOrdersViewController.m in Sources */,
 				8B752E8A23ED00AC00D027D4 /* LoginViewController.m in Sources */,
+				8B8C7CCA23F249FB00781E04 /* ModifyPasswordViewController.m in Sources */,
 				8BF7BD9523EBB3D200AC6B58 /* AppDelegate.m in Sources */,
 				8B4A9EA723EC456B00593582 /* UIImage+TF.m in Sources */,
 				8B6B354223EFA04200F62149 /* NSString+TF.m in Sources */,
 				8B4A9E9C23EBEDE800593582 /* BaseViewController.m in Sources */,
+				8B8C7CD423F3A47F00781E04 /* BaseDAO.m in Sources */,
+				8B8C7CD723F3A4E600781E04 /* UserDAO.m in Sources */,
 				8B6B354523EFAC5200F62149 /* Session.m in Sources */,
 				8B4A9EA023EC396700593582 /* NavigationController.m in Sources */,
 				8B752E8E23ED375400D027D4 /* HomeViewController.m in Sources */,
@@ -460,6 +503,7 @@
 				8B752E9A23ED3CFA00D027D4 /* User.m in Sources */,
 				8B4A9EA323EC428300593582 /* TabBarViewController.m in Sources */,
 				8B6B354B23EFAC8500F62149 /* HttpClient.m in Sources */,
+				8B8C7CD123F3A06D00781E04 /* DBHelper.m in Sources */,
 				8B752E9423ED378500D027D4 /* SettingViewController.m in Sources */,
 				8B6B355123F1840C00F62149 /* NSError+TF.m in Sources */,
 			);
