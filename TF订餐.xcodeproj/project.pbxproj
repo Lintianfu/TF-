@@ -23,11 +23,12 @@
 		8B752E9123ED376D00D027D4 /* HistoryOrdersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B752E9023ED376D00D027D4 /* HistoryOrdersViewController.m */; };
 		8B752E9423ED378500D027D4 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B752E9323ED378500D027D4 /* SettingViewController.m */; };
 		8B752E9A23ED3CFA00D027D4 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B752E9923ED3CFA00D027D4 /* User.m */; };
-		8B8C7CCA23F249FB00781E04 /* ModifyPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8C7CC923F249FB00781E04 /* ModifyPasswordViewController.m */; };
 		8B8C7CCD23F39F5D00781E04 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B8C7CCC23F39F5D00781E04 /* libsqlite3.0.tbd */; };
 		8B8C7CD123F3A06D00781E04 /* DBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8C7CD023F3A06D00781E04 /* DBHelper.m */; };
 		8B8C7CD423F3A47F00781E04 /* BaseDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8C7CD323F3A47F00781E04 /* BaseDAO.m */; };
 		8B8C7CD723F3A4E600781E04 /* UserDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8C7CD623F3A4E600781E04 /* UserDAO.m */; };
+		8B8C7CDB23F3E59A00781E04 /* ModifypasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8C7CD923F3E59A00781E04 /* ModifypasswordViewController.m */; };
+		8B8C7CDC23F3E59A00781E04 /* ModifypasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B8C7CDA23F3E59A00781E04 /* ModifypasswordViewController.xib */; };
 		8BF7BD9523EBB3D200AC6B58 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF7BD9423EBB3D200AC6B58 /* AppDelegate.m */; };
 		8BF7BDA023EBB3D200AC6B58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BF7BD9F23EBB3D200AC6B58 /* Assets.xcassets */; };
 		8BF7BDA323EBB3D200AC6B58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BF7BDA123EBB3D200AC6B58 /* LaunchScreen.storyboard */; };
@@ -67,8 +68,6 @@
 		8B752E9323ED378500D027D4 /* SettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		8B752E9823ED3CFA00D027D4 /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		8B752E9923ED3CFA00D027D4 /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
-		8B8C7CC823F249FB00781E04 /* ModifyPasswordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModifyPasswordViewController.h; sourceTree = "<group>"; };
-		8B8C7CC923F249FB00781E04 /* ModifyPasswordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModifyPasswordViewController.m; sourceTree = "<group>"; };
 		8B8C7CCC23F39F5D00781E04 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		8B8C7CCF23F3A06D00781E04 /* DBHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBHelper.h; sourceTree = "<group>"; };
 		8B8C7CD023F3A06D00781E04 /* DBHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBHelper.m; sourceTree = "<group>"; };
@@ -76,6 +75,9 @@
 		8B8C7CD323F3A47F00781E04 /* BaseDAO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseDAO.m; sourceTree = "<group>"; };
 		8B8C7CD523F3A4E600781E04 /* UserDAO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserDAO.h; sourceTree = "<group>"; };
 		8B8C7CD623F3A4E600781E04 /* UserDAO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserDAO.m; sourceTree = "<group>"; };
+		8B8C7CD823F3E59A00781E04 /* ModifypasswordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModifypasswordViewController.h; sourceTree = "<group>"; };
+		8B8C7CD923F3E59A00781E04 /* ModifypasswordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModifypasswordViewController.m; sourceTree = "<group>"; };
+		8B8C7CDA23F3E59A00781E04 /* ModifypasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModifypasswordViewController.xib; sourceTree = "<group>"; };
 		8BF7BD9023EBB3D200AC6B58 /* TF订餐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TF订餐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BF7BD9323EBB3D200AC6B58 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8BF7BD9423EBB3D200AC6B58 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -231,8 +233,9 @@
 			children = (
 				8B752E9223ED378500D027D4 /* SettingViewController.h */,
 				8B752E9323ED378500D027D4 /* SettingViewController.m */,
-				8B8C7CC823F249FB00781E04 /* ModifyPasswordViewController.h */,
-				8B8C7CC923F249FB00781E04 /* ModifyPasswordViewController.m */,
+				8B8C7CD823F3E59A00781E04 /* ModifypasswordViewController.h */,
+				8B8C7CD923F3E59A00781E04 /* ModifypasswordViewController.m */,
+				8B8C7CDA23F3E59A00781E04 /* ModifypasswordViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -432,6 +435,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B752E8B23ED00AC00D027D4 /* LoginViewController.xib in Resources */,
+				8B8C7CDC23F3E59A00781E04 /* ModifypasswordViewController.xib in Resources */,
 				8BF7BDA323EBB3D200AC6B58 /* LaunchScreen.storyboard in Resources */,
 				8BF7BDA023EBB3D200AC6B58 /* Assets.xcassets in Resources */,
 				8B4A9E8623EBE48200593582 /* bg_set_up.jpg in Resources */,
@@ -489,7 +493,6 @@
 			files = (
 				8B752E9123ED376D00D027D4 /* HistoryOrdersViewController.m in Sources */,
 				8B752E8A23ED00AC00D027D4 /* LoginViewController.m in Sources */,
-				8B8C7CCA23F249FB00781E04 /* ModifyPasswordViewController.m in Sources */,
 				8BF7BD9523EBB3D200AC6B58 /* AppDelegate.m in Sources */,
 				8B4A9EA723EC456B00593582 /* UIImage+TF.m in Sources */,
 				8B6B354223EFA04200F62149 /* NSString+TF.m in Sources */,
@@ -499,6 +502,7 @@
 				8B6B354523EFAC5200F62149 /* Session.m in Sources */,
 				8B4A9EA023EC396700593582 /* NavigationController.m in Sources */,
 				8B752E8E23ED375400D027D4 /* HomeViewController.m in Sources */,
+				8B8C7CDB23F3E59A00781E04 /* ModifypasswordViewController.m in Sources */,
 				8BF7BDA623EBB3D200AC6B58 /* main.m in Sources */,
 				8B752E9A23ED3CFA00D027D4 /* User.m in Sources */,
 				8B4A9EA323EC428300593582 /* TabBarViewController.m in Sources */,

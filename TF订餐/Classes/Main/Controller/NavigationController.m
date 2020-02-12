@@ -38,13 +38,14 @@
         backButton.imageView.contentMode=UIViewContentModeScaleAspectFit;
         backButton.frame=CGRectMake(0, 0, 20, 20);
         backButton.contentEdgeInsets = UIEdgeInsetsMake(0, -15, 0, 0);
-        [backButton addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpOutside];
+        [backButton addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
         viewController.navigationItem.leftBarButtonItem=[[UIBarButtonItem alloc]initWithCustomView:backButton];
     }
     [super pushViewController:viewController animated:YES];
 }
 -(void)back
 {
+    NSLog(@"点击了back按钮");
     [self popViewControllerAnimated:YES];
 }
 -(BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer

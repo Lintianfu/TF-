@@ -10,6 +10,8 @@
 #import "LoginViewController.h"
 #import "Session.h"
 #import <SDWebImage/SDWebImage.h>
+#import <SVProgressHUD/SVProgressHUD.h>
+#import "ModifypasswordViewController.h"
 @interface SettingViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(strong,nonatomic)UITableView *settingTableView;
 @property(copy,nonatomic)NSString *totalCache;
@@ -124,10 +126,11 @@
         case 0:
             switch (indexPath.row) {
                 case 2://修改密码
-                   
+                    [self.navigationController pushViewController:[[ModifypasswordViewController alloc]init] animated:YES];
                     break;
                 case 3://清除缓存
-                    
+                    [self clearCache:indexPath];
+                     self.totalCache=0;
                 default:
                     break;
             }
@@ -147,6 +150,15 @@
             break;
     }
 }
+-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return 10;
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
+{
+    return 1;
+}
 -(NSString *)getCacheSize
 {
         NSInteger totleSize = [[SDImageCache sharedImageCache] totalDiskSize];
@@ -165,6 +177,14 @@
            }
           return cacheSizeStr;
 }
+//清除缓存
+-(void)clearCache:(NSIndexPath *)indexPath
+{
+    [[SDImageCache sharedImageCache] clearDiskOnCompletion:^{
+        [SVProgressHUD showWithStatus:@"正在清除"];
+    }];
+    [SVProgressHUD dismissWithDelay:2];
+}
 
 -(void)log_out
 {
@@ -182,5 +202,6 @@
     });
     
 }
+
 
 @end

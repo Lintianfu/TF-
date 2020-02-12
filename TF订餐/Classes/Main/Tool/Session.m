@@ -9,6 +9,7 @@
 #import "Session.h"
 #import "HttpClient.h"
 #import "NSString+TF.h"
+#import "UserDAO.h"
 #import <MJExtension/MJExtension.h>
 #import <SVProgressHUD/SVProgressHUD.h>
 #import "TabBarViewController.h"
@@ -116,5 +117,33 @@ static Session *_shareSession=nil;
        [cookies enumerateObjectsUsingBlock:^(NSHTTPCookie *  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
            [[NSHTTPCookieStorage sharedHTTPCookieStorage] deleteCookie:obj];
        }];
+}
+-(void)modifyPasswordWithOriginalPsw:(NSString *)originalPsw newPsw:(NSString *)newPsw newPswAgain:(NSString *)newPswAgain result:(void(^)(NSError *error))result
+{
+    
+    UserDAO *dao=[UserDAO sharedInstance];
+    User *user_1=[dao findUser];
+    NSString *token=user_1.token;
+    NSString *OPT = @"5";
+    NSString *originPwd = [NSString encrypt3DES:originalPsw key:BLDESkey];
+    NSString *newPwd = [NSString encrypt3DES:newPsw key:BLDESkey];
+    NSString *newPwdAgain = [NSString encrypt3DES:newPswAgain key:BLDESkey];
+    
+    NSMutableDictionary *param = [NSMutableDictionary dictionaryWithDictionary:@{@"token":token,
+                                                                                 @"OPT":OPT,
+                                                                                 @"originPwd":originPwd,
+                                                                                 @"newPwd":newPwd,
+                                                                                 @"newPwdAgain":newPwdAgain}];
+    [[HttpClient sharedClient] postWithParams:param success:^(id json) {
+        if (result) {
+            result(nil);
+        }
+        
+    } faliture:^(NSError *error) {
+        if (result) {
+            result(error);
+        }
+    } autoShowError:YES];
+
 }
 @end

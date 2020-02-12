@@ -65,7 +65,7 @@ static UserDAO *sharedSingleton = nil;
              sqlite3_bind_text(statement, 1, cuid, -1, NULL);
             //执行
             if (sqlite3_step(statement) != SQLITE_DONE) {
-                NSLog(@"删除数据失败%s",sqlite3_errmsg(db));
+                NSLog(@"删除数据失败%s",sqlite3_errmsg(db));//打印错误信息
             }
         }
         sqlite3_finalize(statement);
@@ -92,7 +92,7 @@ static UserDAO *sharedSingleton = nil;
                 user.avatar = [[NSString alloc] initWithUTF8String:cavatar];
                 sqlite3_finalize(statement);
                 sqlite3_close(db);
-                return user;
+                return user;  //注意return 要close
             }
         }
          sqlite3_finalize(statement);

@@ -57,9 +57,11 @@
     NSString *psw = self.pswTextField.text;
     if ([jobNumber isEmpty]) {
            [SVProgressHUD showErrorWithStatus:@"请输入工号"];
+           [SVProgressHUD dismissWithDelay:1];
            return;
        }else if([psw isEmpty]){
            [SVProgressHUD showErrorWithStatus:@"请输入密码"];
+           [SVProgressHUD dismissWithDelay:1];
            return;
        }
     [self.view endEditing:YES];

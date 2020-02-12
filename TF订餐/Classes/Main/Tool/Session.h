@@ -61,6 +61,9 @@ typedef NS_ENUM(NSUInteger,SessionUserStatus){
  *  @param result   返回值
  */
 -(void)userLogin:(NSString *)username pwd:(NSString *)pwd  result:(void(^)(NSError *error))result;
+
+//修改密码
+-(void)modifyPasswordWithOriginalPsw:(NSString *)originalPsw newPsw:(NSString *)newPsw newPswAgain:(NSString *)newPswAgain result:(void(^)(NSError *error))result;
 @end
 
 NS_ASSUME_NONNULL_END
