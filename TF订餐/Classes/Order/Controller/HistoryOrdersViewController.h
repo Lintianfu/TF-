@@ -7,11 +7,13 @@
 //
 
 #import "BaseViewController.h"
-
+#import "UserDAO.h"
+#import "HistoryOrder.h"
+#import "HistoryDetailOrder.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface HistoryOrdersViewController : BaseViewController
-
+@property(nonatomic,strong)User *user;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -43,7 +43,7 @@
     
     //添加历史订单控制器
     HistoryOrdersViewController *history=[[HistoryOrdersViewController alloc]init];
-    [self addOneChildVC:history title:@"历史订单" imageName:@"History" selectedImageName:@"History_select"];
+    [self addOneChildVC:history title:@"历史订单" imageName:@"History" selectedImageName:@"history_select"];
     
     //添加设置控制器
     SettingViewController *setting=[[SettingViewController alloc]init];

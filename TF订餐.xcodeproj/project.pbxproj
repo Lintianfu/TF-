@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B1BA78023F81C190072F00F /* HistoryOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B1BA77F23F81C190072F00F /* HistoryOrder.m */; };
+		8B1BA78323F81C310072F00F /* HistoryDetailOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B1BA78223F81C310072F00F /* HistoryDetailOrder.m */; };
+		8B1BA78623F81E4B0072F00F /* HistoryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B1BA78523F81E4B0072F00F /* HistoryDetailViewController.m */; };
+		8B1BA78A23F81E8C0072F00F /* HistoryOrderSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B1BA78823F81E8C0072F00F /* HistoryOrderSearchViewController.m */; };
+		8B1BA78B23F81E8C0072F00F /* HistoryOrderSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B1BA78923F81E8C0072F00F /* HistoryOrderSearchViewController.xib */; };
+		8B1BA78F23F81EFA0072F00F /* HistoryDetailViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B1BA78D23F81EFA0072F00F /* HistoryDetailViewCell.m */; };
+		8B1BA79023F81EFA0072F00F /* HistoryDetailViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B1BA78E23F81EFA0072F00F /* HistoryDetailViewCell.xib */; };
 		8B4A9E8123EBDA2E00593582 /* Pods_TF订餐.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B4A9E8023EBDA2E00593582 /* Pods_TF订餐.framework */; };
 		8B4A9E8623EBE48200593582 /* bg_set_up.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8B4A9E8523EBE48200593582 /* bg_set_up.jpg */; };
 		8B4A9E9C23EBEDE800593582 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B4A9E9B23EBEDE800593582 /* BaseViewController.m */; };
@@ -29,6 +36,15 @@
 		8B8C7CD723F3A4E600781E04 /* UserDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8C7CD623F3A4E600781E04 /* UserDAO.m */; };
 		8B8C7CDB23F3E59A00781E04 /* ModifypasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8C7CD923F3E59A00781E04 /* ModifypasswordViewController.m */; };
 		8B8C7CDC23F3E59A00781E04 /* ModifypasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B8C7CDA23F3E59A00781E04 /* ModifypasswordViewController.xib */; };
+		8B92708823F63AF900FDD39B /* Food.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B92708723F63AF900FDD39B /* Food.m */; };
+		8B92708B23F641E500FDD39B /* FoodList.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B92708A23F641E500FDD39B /* FoodList.m */; };
+		8B92708E23F64CF200FDD39B /* FoodOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B92708D23F64CF200FDD39B /* FoodOrder.m */; };
+		8B92709123F64FA300FDD39B /* FoodOrderInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B92709023F64FA300FDD39B /* FoodOrderInfo.m */; };
+		8B92709423F690AD00FDD39B /* NSDate+TF.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B92709323F690AD00FDD39B /* NSDate+TF.m */; };
+		8B92709723F6A4E700FDD39B /* SelectedFoodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B92709623F6A4E700FDD39B /* SelectedFoodViewController.m */; };
+		8B92709B23F6D19C00FDD39B /* SelectFoodTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B92709923F6D19C00FDD39B /* SelectFoodTableViewCell.m */; };
+		8B92709C23F6D19C00FDD39B /* SelectFoodTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B92709A23F6D19C00FDD39B /* SelectFoodTableViewCell.xib */; };
+		8B9270A123F6D83300FDD39B /* CommitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9270A023F6D83300FDD39B /* CommitView.m */; };
 		8BF7BD9523EBB3D200AC6B58 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF7BD9423EBB3D200AC6B58 /* AppDelegate.m */; };
 		8BF7BDA023EBB3D200AC6B58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BF7BD9F23EBB3D200AC6B58 /* Assets.xcassets */; };
 		8BF7BDA323EBB3D200AC6B58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BF7BDA123EBB3D200AC6B58 /* LaunchScreen.storyboard */; };
@@ -37,6 +53,18 @@
 
 /* Begin PBXFileReference section */
 		044D1C1831D8D41B68018CE0 /* Pods_TF__.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TF__.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B1BA77E23F81C190072F00F /* HistoryOrder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HistoryOrder.h; sourceTree = "<group>"; };
+		8B1BA77F23F81C190072F00F /* HistoryOrder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HistoryOrder.m; sourceTree = "<group>"; };
+		8B1BA78123F81C310072F00F /* HistoryDetailOrder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HistoryDetailOrder.h; sourceTree = "<group>"; };
+		8B1BA78223F81C310072F00F /* HistoryDetailOrder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HistoryDetailOrder.m; sourceTree = "<group>"; };
+		8B1BA78423F81E4B0072F00F /* HistoryDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HistoryDetailViewController.h; sourceTree = "<group>"; };
+		8B1BA78523F81E4B0072F00F /* HistoryDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HistoryDetailViewController.m; sourceTree = "<group>"; };
+		8B1BA78723F81E8C0072F00F /* HistoryOrderSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HistoryOrderSearchViewController.h; sourceTree = "<group>"; };
+		8B1BA78823F81E8C0072F00F /* HistoryOrderSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HistoryOrderSearchViewController.m; sourceTree = "<group>"; };
+		8B1BA78923F81E8C0072F00F /* HistoryOrderSearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryOrderSearchViewController.xib; sourceTree = "<group>"; };
+		8B1BA78C23F81EFA0072F00F /* HistoryDetailViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HistoryDetailViewCell.h; sourceTree = "<group>"; };
+		8B1BA78D23F81EFA0072F00F /* HistoryDetailViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HistoryDetailViewCell.m; sourceTree = "<group>"; };
+		8B1BA78E23F81EFA0072F00F /* HistoryDetailViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryDetailViewCell.xib; sourceTree = "<group>"; };
 		8B4A9E7E23EBDA1A00593582 /* ActionSheetPicker_3_0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ActionSheetPicker_3_0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B4A9E8023EBDA2E00593582 /* Pods_TF订餐.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = "Pods_TF订餐.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B4A9E8523EBE48200593582 /* bg_set_up.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg_set_up.jpg; sourceTree = "<group>"; };
@@ -78,6 +106,23 @@
 		8B8C7CD823F3E59A00781E04 /* ModifypasswordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModifypasswordViewController.h; sourceTree = "<group>"; };
 		8B8C7CD923F3E59A00781E04 /* ModifypasswordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModifypasswordViewController.m; sourceTree = "<group>"; };
 		8B8C7CDA23F3E59A00781E04 /* ModifypasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModifypasswordViewController.xib; sourceTree = "<group>"; };
+		8B92708623F63AF900FDD39B /* Food.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Food.h; sourceTree = "<group>"; };
+		8B92708723F63AF900FDD39B /* Food.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Food.m; sourceTree = "<group>"; };
+		8B92708923F641E500FDD39B /* FoodList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FoodList.h; sourceTree = "<group>"; };
+		8B92708A23F641E500FDD39B /* FoodList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FoodList.m; sourceTree = "<group>"; };
+		8B92708C23F64CF200FDD39B /* FoodOrder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FoodOrder.h; sourceTree = "<group>"; };
+		8B92708D23F64CF200FDD39B /* FoodOrder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FoodOrder.m; sourceTree = "<group>"; };
+		8B92708F23F64FA300FDD39B /* FoodOrderInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FoodOrderInfo.h; sourceTree = "<group>"; };
+		8B92709023F64FA300FDD39B /* FoodOrderInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FoodOrderInfo.m; sourceTree = "<group>"; };
+		8B92709223F690AD00FDD39B /* NSDate+TF.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+TF.h"; sourceTree = "<group>"; };
+		8B92709323F690AD00FDD39B /* NSDate+TF.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+TF.m"; sourceTree = "<group>"; };
+		8B92709523F6A4E700FDD39B /* SelectedFoodViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectedFoodViewController.h; sourceTree = "<group>"; };
+		8B92709623F6A4E700FDD39B /* SelectedFoodViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectedFoodViewController.m; sourceTree = "<group>"; };
+		8B92709823F6D19C00FDD39B /* SelectFoodTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectFoodTableViewCell.h; sourceTree = "<group>"; };
+		8B92709923F6D19C00FDD39B /* SelectFoodTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectFoodTableViewCell.m; sourceTree = "<group>"; };
+		8B92709A23F6D19C00FDD39B /* SelectFoodTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectFoodTableViewCell.xib; sourceTree = "<group>"; };
+		8B92709F23F6D83300FDD39B /* CommitView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommitView.h; sourceTree = "<group>"; };
+		8B9270A023F6D83300FDD39B /* CommitView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommitView.m; sourceTree = "<group>"; };
 		8BF7BD9023EBB3D200AC6B58 /* TF订餐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TF订餐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BF7BD9323EBB3D200AC6B58 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8BF7BD9423EBB3D200AC6B58 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -243,6 +288,10 @@
 		8B4A9E9423EBEA6B00593582 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8B1BA77E23F81C190072F00F /* HistoryOrder.h */,
+				8B1BA77F23F81C190072F00F /* HistoryOrder.m */,
+				8B1BA78123F81C310072F00F /* HistoryDetailOrder.h */,
+				8B1BA78223F81C310072F00F /* HistoryDetailOrder.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -250,6 +299,9 @@
 		8B4A9E9523EBEA7100593582 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8B1BA78C23F81EFA0072F00F /* HistoryDetailViewCell.h */,
+				8B1BA78D23F81EFA0072F00F /* HistoryDetailViewCell.m */,
+				8B1BA78E23F81EFA0072F00F /* HistoryDetailViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -259,6 +311,11 @@
 			children = (
 				8B752E8F23ED376D00D027D4 /* HistoryOrdersViewController.h */,
 				8B752E9023ED376D00D027D4 /* HistoryOrdersViewController.m */,
+				8B1BA78423F81E4B0072F00F /* HistoryDetailViewController.h */,
+				8B1BA78523F81E4B0072F00F /* HistoryDetailViewController.m */,
+				8B1BA78723F81E8C0072F00F /* HistoryOrderSearchViewController.h */,
+				8B1BA78823F81E8C0072F00F /* HistoryOrderSearchViewController.m */,
+				8B1BA78923F81E8C0072F00F /* HistoryOrderSearchViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -266,6 +323,14 @@
 		8B4A9E9723EBEA8400593582 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8B92708623F63AF900FDD39B /* Food.h */,
+				8B92708723F63AF900FDD39B /* Food.m */,
+				8B92708923F641E500FDD39B /* FoodList.h */,
+				8B92708A23F641E500FDD39B /* FoodList.m */,
+				8B92708C23F64CF200FDD39B /* FoodOrder.h */,
+				8B92708D23F64CF200FDD39B /* FoodOrder.m */,
+				8B92708F23F64FA300FDD39B /* FoodOrderInfo.h */,
+				8B92709023F64FA300FDD39B /* FoodOrderInfo.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -273,6 +338,8 @@
 		8B4A9E9823EBEA8C00593582 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8B92709E23F6D7B700FDD39B /* CommitView */,
+				8B92709D23F6D73700FDD39B /* SelectFoodCell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -285,6 +352,8 @@
 				8B752E8923ED00AC00D027D4 /* LoginViewController.xib */,
 				8B752E8C23ED375400D027D4 /* HomeViewController.h */,
 				8B752E8D23ED375400D027D4 /* HomeViewController.m */,
+				8B92709523F6A4E700FDD39B /* SelectedFoodViewController.h */,
+				8B92709623F6A4E700FDD39B /* SelectedFoodViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -298,6 +367,8 @@
 				8B6B354123EFA04200F62149 /* NSString+TF.m */,
 				8B6B354F23F1840C00F62149 /* NSError+TF.h */,
 				8B6B355023F1840C00F62149 /* NSError+TF.m */,
+				8B92709223F690AD00FDD39B /* NSDate+TF.h */,
+				8B92709323F690AD00FDD39B /* NSDate+TF.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -331,6 +402,25 @@
 				8B8C7CD623F3A4E600781E04 /* UserDAO.m */,
 			);
 			path = DAO;
+			sourceTree = "<group>";
+		};
+		8B92709D23F6D73700FDD39B /* SelectFoodCell */ = {
+			isa = PBXGroup;
+			children = (
+				8B92709823F6D19C00FDD39B /* SelectFoodTableViewCell.h */,
+				8B92709923F6D19C00FDD39B /* SelectFoodTableViewCell.m */,
+				8B92709A23F6D19C00FDD39B /* SelectFoodTableViewCell.xib */,
+			);
+			path = SelectFoodCell;
+			sourceTree = "<group>";
+		};
+		8B92709E23F6D7B700FDD39B /* CommitView */ = {
+			isa = PBXGroup;
+			children = (
+				8B92709F23F6D83300FDD39B /* CommitView.h */,
+				8B9270A023F6D83300FDD39B /* CommitView.m */,
+			);
+			path = CommitView;
 			sourceTree = "<group>";
 		};
 		8BF7BD8723EBB3D200AC6B58 = {
@@ -436,9 +526,12 @@
 			files = (
 				8B752E8B23ED00AC00D027D4 /* LoginViewController.xib in Resources */,
 				8B8C7CDC23F3E59A00781E04 /* ModifypasswordViewController.xib in Resources */,
+				8B1BA79023F81EFA0072F00F /* HistoryDetailViewCell.xib in Resources */,
 				8BF7BDA323EBB3D200AC6B58 /* LaunchScreen.storyboard in Resources */,
+				8B1BA78B23F81E8C0072F00F /* HistoryOrderSearchViewController.xib in Resources */,
 				8BF7BDA023EBB3D200AC6B58 /* Assets.xcassets in Resources */,
 				8B4A9E8623EBE48200593582 /* bg_set_up.jpg in Resources */,
+				8B92709C23F6D19C00FDD39B /* SelectFoodTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,18 +588,31 @@
 				8B752E8A23ED00AC00D027D4 /* LoginViewController.m in Sources */,
 				8BF7BD9523EBB3D200AC6B58 /* AppDelegate.m in Sources */,
 				8B4A9EA723EC456B00593582 /* UIImage+TF.m in Sources */,
+				8B1BA78623F81E4B0072F00F /* HistoryDetailViewController.m in Sources */,
 				8B6B354223EFA04200F62149 /* NSString+TF.m in Sources */,
+				8B92708823F63AF900FDD39B /* Food.m in Sources */,
 				8B4A9E9C23EBEDE800593582 /* BaseViewController.m in Sources */,
+				8B92709B23F6D19C00FDD39B /* SelectFoodTableViewCell.m in Sources */,
 				8B8C7CD423F3A47F00781E04 /* BaseDAO.m in Sources */,
+				8B9270A123F6D83300FDD39B /* CommitView.m in Sources */,
+				8B1BA78323F81C310072F00F /* HistoryDetailOrder.m in Sources */,
+				8B1BA78A23F81E8C0072F00F /* HistoryOrderSearchViewController.m in Sources */,
 				8B8C7CD723F3A4E600781E04 /* UserDAO.m in Sources */,
 				8B6B354523EFAC5200F62149 /* Session.m in Sources */,
+				8B92709723F6A4E700FDD39B /* SelectedFoodViewController.m in Sources */,
+				8B92709423F690AD00FDD39B /* NSDate+TF.m in Sources */,
 				8B4A9EA023EC396700593582 /* NavigationController.m in Sources */,
+				8B1BA78F23F81EFA0072F00F /* HistoryDetailViewCell.m in Sources */,
+				8B92708B23F641E500FDD39B /* FoodList.m in Sources */,
 				8B752E8E23ED375400D027D4 /* HomeViewController.m in Sources */,
+				8B92709123F64FA300FDD39B /* FoodOrderInfo.m in Sources */,
 				8B8C7CDB23F3E59A00781E04 /* ModifypasswordViewController.m in Sources */,
 				8BF7BDA623EBB3D200AC6B58 /* main.m in Sources */,
 				8B752E9A23ED3CFA00D027D4 /* User.m in Sources */,
 				8B4A9EA323EC428300593582 /* TabBarViewController.m in Sources */,
 				8B6B354B23EFAC8500F62149 /* HttpClient.m in Sources */,
+				8B1BA78023F81C190072F00F /* HistoryOrder.m in Sources */,
+				8B92708E23F64CF200FDD39B /* FoodOrder.m in Sources */,
 				8B8C7CD123F3A06D00781E04 /* DBHelper.m in Sources */,
 				8B752E9423ED378500D027D4 /* SettingViewController.m in Sources */,
 				8B6B355123F1840C00F62149 /* NSError+TF.m in Sources */,
