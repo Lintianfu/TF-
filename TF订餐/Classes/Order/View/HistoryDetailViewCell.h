@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface HistoryDetailViewCell : UITableViewCell
 @property (strong , nonatomic) HistoryDetailOrder *historyDetailOrder;
+-(instancetype)initWithTableView:(UITableView *)tableView indexPath:(NSIndexPath *)indexPath;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -286,7 +286,8 @@
  */
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (_isLoading) return;
+    if (_isLoading)
+        return;
     HistoryOrder *order = self.ordersArray[indexPath.section];
     NSString *time = [order.selTime substringWithRange:NSMakeRange(0, 10)];
     NSString *detailTitle;
@@ -321,6 +322,7 @@
         [SVProgressHUD showWithStatus:@"加载中..."];
         _isLoading = YES;
         [[HttpClient sharedClient] postWithParams:param success:^(id json) {
+            [SVProgressHUD dismiss];
            HistoryDetailViewController *detailViewController = [[HistoryDetailViewController alloc] init];
             detailViewController.navigationItem.title = detailTitle;
             detailViewController.json = json;

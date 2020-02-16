@@ -9,12 +9,10 @@
 /* Begin PBXBuildFile section */
 		8B1BA78023F81C190072F00F /* HistoryOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B1BA77F23F81C190072F00F /* HistoryOrder.m */; };
 		8B1BA78323F81C310072F00F /* HistoryDetailOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B1BA78223F81C310072F00F /* HistoryDetailOrder.m */; };
-		8B1BA78623F81E4B0072F00F /* HistoryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B1BA78523F81E4B0072F00F /* HistoryDetailViewController.m */; };
 		8B1BA78A23F81E8C0072F00F /* HistoryOrderSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B1BA78823F81E8C0072F00F /* HistoryOrderSearchViewController.m */; };
 		8B1BA78B23F81E8C0072F00F /* HistoryOrderSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B1BA78923F81E8C0072F00F /* HistoryOrderSearchViewController.xib */; };
 		8B1BA78F23F81EFA0072F00F /* HistoryDetailViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B1BA78D23F81EFA0072F00F /* HistoryDetailViewCell.m */; };
 		8B1BA79023F81EFA0072F00F /* HistoryDetailViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B1BA78E23F81EFA0072F00F /* HistoryDetailViewCell.xib */; };
-		8B4A9E8123EBDA2E00593582 /* Pods_TF订餐.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B4A9E8023EBDA2E00593582 /* Pods_TF订餐.framework */; };
 		8B4A9E8623EBE48200593582 /* bg_set_up.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8B4A9E8523EBE48200593582 /* bg_set_up.jpg */; };
 		8B4A9E9C23EBEDE800593582 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B4A9E9B23EBEDE800593582 /* BaseViewController.m */; };
 		8B4A9EA023EC396700593582 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B4A9E9F23EC396700593582 /* NavigationController.m */; };
@@ -30,7 +28,10 @@
 		8B752E9123ED376D00D027D4 /* HistoryOrdersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B752E9023ED376D00D027D4 /* HistoryOrdersViewController.m */; };
 		8B752E9423ED378500D027D4 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B752E9323ED378500D027D4 /* SettingViewController.m */; };
 		8B752E9A23ED3CFA00D027D4 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B752E9923ED3CFA00D027D4 /* User.m */; };
-		8B8C7CCD23F39F5D00781E04 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B8C7CCC23F39F5D00781E04 /* libsqlite3.0.tbd */; };
+		8B8C67C023F8F05F00F436B3 /* HistoryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8C67BE23F8F05F00F436B3 /* HistoryDetailViewController.m */; };
+		8B8C67C123F8F05F00F436B3 /* HistoryDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B8C67BF23F8F05F00F436B3 /* HistoryDetailViewController.xib */; };
+		8B8C67C323F90D6900F436B3 /* Pods_TF订餐.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8B4A9E8023EBDA2E00593582 /* Pods_TF订餐.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8B8C7CCD23F39F5D00781E04 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B8C7CCC23F39F5D00781E04 /* libsqlite3.0.tbd */; settings = {ATTRIBUTES = (Required, ); }; };
 		8B8C7CD123F3A06D00781E04 /* DBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8C7CD023F3A06D00781E04 /* DBHelper.m */; };
 		8B8C7CD423F3A47F00781E04 /* BaseDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8C7CD323F3A47F00781E04 /* BaseDAO.m */; };
 		8B8C7CD723F3A4E600781E04 /* UserDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8C7CD623F3A4E600781E04 /* UserDAO.m */; };
@@ -51,14 +52,26 @@
 		8BF7BDA623EBB3D200AC6B58 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF7BDA523EBB3D200AC6B58 /* main.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		8B8C67C423F90D6900F436B3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8B8C67C323F90D6900F436B3 /* Pods_TF订餐.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		044D1C1831D8D41B68018CE0 /* Pods_TF__.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TF__.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B1BA77E23F81C190072F00F /* HistoryOrder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HistoryOrder.h; sourceTree = "<group>"; };
 		8B1BA77F23F81C190072F00F /* HistoryOrder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HistoryOrder.m; sourceTree = "<group>"; };
 		8B1BA78123F81C310072F00F /* HistoryDetailOrder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HistoryDetailOrder.h; sourceTree = "<group>"; };
 		8B1BA78223F81C310072F00F /* HistoryDetailOrder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HistoryDetailOrder.m; sourceTree = "<group>"; };
-		8B1BA78423F81E4B0072F00F /* HistoryDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HistoryDetailViewController.h; sourceTree = "<group>"; };
-		8B1BA78523F81E4B0072F00F /* HistoryDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HistoryDetailViewController.m; sourceTree = "<group>"; };
 		8B1BA78723F81E8C0072F00F /* HistoryOrderSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HistoryOrderSearchViewController.h; sourceTree = "<group>"; };
 		8B1BA78823F81E8C0072F00F /* HistoryOrderSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HistoryOrderSearchViewController.m; sourceTree = "<group>"; };
 		8B1BA78923F81E8C0072F00F /* HistoryOrderSearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryOrderSearchViewController.xib; sourceTree = "<group>"; };
@@ -96,6 +109,9 @@
 		8B752E9323ED378500D027D4 /* SettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		8B752E9823ED3CFA00D027D4 /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		8B752E9923ED3CFA00D027D4 /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		8B8C67BD23F8F05F00F436B3 /* HistoryDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HistoryDetailViewController.h; sourceTree = "<group>"; };
+		8B8C67BE23F8F05F00F436B3 /* HistoryDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HistoryDetailViewController.m; sourceTree = "<group>"; };
+		8B8C67BF23F8F05F00F436B3 /* HistoryDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryDetailViewController.xib; sourceTree = "<group>"; };
 		8B8C7CCC23F39F5D00781E04 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		8B8C7CCF23F3A06D00781E04 /* DBHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBHelper.h; sourceTree = "<group>"; };
 		8B8C7CD023F3A06D00781E04 /* DBHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBHelper.m; sourceTree = "<group>"; };
@@ -140,7 +156,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B8C7CCD23F39F5D00781E04 /* libsqlite3.0.tbd in Frameworks */,
-				8B4A9E8123EBDA2E00593582 /* Pods_TF订餐.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,7 +166,6 @@
 			isa = PBXGroup;
 			children = (
 				8B8C7CCC23F39F5D00781E04 /* libsqlite3.0.tbd */,
-				8B4A9E8023EBDA2E00593582 /* Pods_TF订餐.framework */,
 				8B4A9E7E23EBDA1A00593582 /* ActionSheetPicker_3_0.framework */,
 				044D1C1831D8D41B68018CE0 /* Pods_TF__.framework */,
 			);
@@ -311,11 +325,12 @@
 			children = (
 				8B752E8F23ED376D00D027D4 /* HistoryOrdersViewController.h */,
 				8B752E9023ED376D00D027D4 /* HistoryOrdersViewController.m */,
-				8B1BA78423F81E4B0072F00F /* HistoryDetailViewController.h */,
-				8B1BA78523F81E4B0072F00F /* HistoryDetailViewController.m */,
 				8B1BA78723F81E8C0072F00F /* HistoryOrderSearchViewController.h */,
 				8B1BA78823F81E8C0072F00F /* HistoryOrderSearchViewController.m */,
 				8B1BA78923F81E8C0072F00F /* HistoryOrderSearchViewController.xib */,
+				8B8C67BD23F8F05F00F436B3 /* HistoryDetailViewController.h */,
+				8B8C67BE23F8F05F00F436B3 /* HistoryDetailViewController.m */,
+				8B8C67BF23F8F05F00F436B3 /* HistoryDetailViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -384,6 +399,14 @@
 			path = Tool;
 			sourceTree = "<group>";
 		};
+		8B8C67C623F90FE500F436B3 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				8B4A9E8023EBDA2E00593582 /* Pods_TF订餐.framework */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
 		8B8C7CCB23F257AC00781E04 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
@@ -430,6 +453,7 @@
 				8BF7BD9123EBB3D200AC6B58 /* Products */,
 				8C41DF177EF18710075169F6 /* Pods */,
 				1E6899F89BCCC8FC0C4A4040 /* Frameworks */,
+				8B8C67C623F90FE500F436B3 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -477,6 +501,7 @@
 				8BF7BD8D23EBB3D200AC6B58 /* Frameworks */,
 				8BF7BD8E23EBB3D200AC6B58 /* Resources */,
 				42F428D2DDEB21873FC99332 /* [CP] Embed Pods Frameworks */,
+				8B8C67C423F90D6900F436B3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -527,6 +552,7 @@
 				8B752E8B23ED00AC00D027D4 /* LoginViewController.xib in Resources */,
 				8B8C7CDC23F3E59A00781E04 /* ModifypasswordViewController.xib in Resources */,
 				8B1BA79023F81EFA0072F00F /* HistoryDetailViewCell.xib in Resources */,
+				8B8C67C123F8F05F00F436B3 /* HistoryDetailViewController.xib in Resources */,
 				8BF7BDA323EBB3D200AC6B58 /* LaunchScreen.storyboard in Resources */,
 				8B1BA78B23F81E8C0072F00F /* HistoryOrderSearchViewController.xib in Resources */,
 				8BF7BDA023EBB3D200AC6B58 /* Assets.xcassets in Resources */,
@@ -588,7 +614,6 @@
 				8B752E8A23ED00AC00D027D4 /* LoginViewController.m in Sources */,
 				8BF7BD9523EBB3D200AC6B58 /* AppDelegate.m in Sources */,
 				8B4A9EA723EC456B00593582 /* UIImage+TF.m in Sources */,
-				8B1BA78623F81E4B0072F00F /* HistoryDetailViewController.m in Sources */,
 				8B6B354223EFA04200F62149 /* NSString+TF.m in Sources */,
 				8B92708823F63AF900FDD39B /* Food.m in Sources */,
 				8B4A9E9C23EBEDE800593582 /* BaseViewController.m in Sources */,
@@ -613,6 +638,7 @@
 				8B6B354B23EFAC8500F62149 /* HttpClient.m in Sources */,
 				8B1BA78023F81C190072F00F /* HistoryOrder.m in Sources */,
 				8B92708E23F64CF200FDD39B /* FoodOrder.m in Sources */,
+				8B8C67C023F8F05F00F436B3 /* HistoryDetailViewController.m in Sources */,
 				8B8C7CD123F3A06D00781E04 /* DBHelper.m in Sources */,
 				8B752E9423ED378500D027D4 /* SettingViewController.m in Sources */,
 				8B6B355123F1840C00F62149 /* NSError+TF.m in Sources */,

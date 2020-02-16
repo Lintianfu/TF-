@@ -130,7 +130,8 @@
                     break;
                 case 3://清除缓存
                     [self clearCache:indexPath];
-                     self.totalCache=0;
+                    self.totalCache=[self getCacheSize];
+                    [self.settingTableView reloadData];
                 default:
                     break;
             }
@@ -184,6 +185,7 @@
         [SVProgressHUD showWithStatus:@"正在清除"];
     }];
     [SVProgressHUD dismissWithDelay:2];
+    
 }
 
 -(void)log_out

@@ -15,7 +15,6 @@
     if(self)
     {
        self.orderID = dict[@"id"];
-       //设置每日点餐的时间
        self.selTime = dict[@"selTime"];
        self.breadfast = [NSString stringWithFormat:@"%@",dict[@"breakfast"]];
        self.lunch = [NSString stringWithFormat:@"%@",dict[@"lunch"]];
